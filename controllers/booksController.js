@@ -2,6 +2,7 @@
 
 const Book = require("../models/Book");
 
+// fetch all data of the book
 const getAllBooks = async (req, res, next) => {
   let books;
   try {
