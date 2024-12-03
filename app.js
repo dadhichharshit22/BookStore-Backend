@@ -8,10 +8,8 @@ const cors = require("cors");
 // Middlewares
 app.use(express.json());
 app.use(cors());
-app.use("/books", router); // localhost:5000/books
-// app.use('/',(req,res,next)=>{
-//     res.send("This is our starting app");
-// })
+app.use("/books", router); 
+
 
 mongoose.connect(
     "mongodb+srv://dadhichharshit222002:WcAae7CiASJ8szMN@bookstore.lcxta.mongodb.net/"
